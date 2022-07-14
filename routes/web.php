@@ -14,5 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('account');
 });
+
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+// Route::get('/account', function () {
+//     return view('account');
+// });
+
+Route::get('/signup', function () {
+    return view('signup');
+})->name('signup');
+
+Route::get('/landing', function () {
+    return view('landing');
+})->name('landing');
+
+Route::post('/createAccount', function () {
+    return view('createAccount');
+})->name('createAccount');
