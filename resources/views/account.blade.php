@@ -6,9 +6,10 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head> 
 <body>
-<h1 class="alert alert-success text-center text-info">School Management System</h1>
+<h1 class="alert alert-success text-center text-info">Usmanu Danfodiyo University, Sokoto </h1>
 <br><br><br><br><br><br>
 <div class="col-sm-4" style="margin-left: 400px;">
+  <h3 align="text-center">Students Registration Portal</h3>
 <form >
   <div class="row mb-3">
     <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>

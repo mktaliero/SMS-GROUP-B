@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+// use App\Http\Requests\StoreAccount
+use Illuminate\Support\Facades\View;
+use App\Models\Applicant;
 use Illuminate\Http\Request;
 
 class CreateAccount extends Controller
@@ -15,6 +18,7 @@ class CreateAccount extends Controller
     {
         //
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -36,7 +40,9 @@ class CreateAccount extends Controller
     public function store(Request $request)
     {
         //
-        createAccount::create($request->all());
+        
+        Applicant::create($request->all());
+         return view('signup');
     }
 
     /**

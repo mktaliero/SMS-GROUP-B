@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CreateAccount;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,10 +30,13 @@ Route::get('/signup', function () {
     return view('signup');
 })->name('signup');
 
+
+Route::post('/createAccount',[createAccount::class, 'store'])->name('createAccount.store');
+
 Route::get('/landing', function () {
     return view('landing');
 })->name('landing');
 
-Route::post('/createAccount', function () {
-    return view('createAccount');
-})->name('createAccount');
+// Route::post('/createAccount', function () {
+//     return view('createAccount');
+// })->name('createAccount');

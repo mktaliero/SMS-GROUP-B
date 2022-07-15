@@ -10,24 +10,24 @@
 <br><br>
 <div class="col-sm-4" style="margin-left: 400px;">
 <h4>Create Account</h4>
-
-  <form action="{{ route('createAccount.store')}}" method="post">
-@csrf
+<!-- <form action="{{createAccount}}" method="post"> -->
+  <form action=" " method="post">
+ <!--  @csrf -->
 <div class="mb-3">
   <label for="formFile" class="form-label">Fullname</label>
-  <input class="form-control" type="text" id="full_name" name="full_name">
+  <input class="form-control" type="text" id="full_name">
 </div>
 <div class="mb-3">
   <label for="formFileMultiple" class="form-label">Email</label>
-  <input class="form-control" type="text" id="email" name="email">
+  <input class="form-control" type="text" id="email">
 </div>
 <div class="mb-3">
   <label for="formFileDisabled" class="form-label">Phone Number</label>
-  <input class="form-control" type="text" id="phone_no" name="phone_no">
+  <input class="form-control" type="text" id="phone_no">
 </div>
 <div class="mb-3">
   <label for="formFileSm" class="form-label">Password</label>
-  <input class="form-control " id="password" type="text" name="password">
+  <input class="form-control " id="password" type="text">
 </div>
  <div class="text-center">
   <button type="submit" class="btn btn-primary">Submit</button>

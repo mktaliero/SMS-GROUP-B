@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTableApplicant extends Migration
+class CreateApplicantsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,13 @@ class CreateTableApplicant extends Migration
      */
     public function up()
     {
-        Schema::create('table_applicant', function (Blueprint $table) {
+        Schema::create('applicants', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('full_name');
+            $table->string('email');
+            $table->string('phone_no');
+            $table->string('password');
         });
     }
 
@@ -26,6 +30,6 @@ class CreateTableApplicant extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_applicant');
+        Schema::dropIfExists('applicants');
     }
 }

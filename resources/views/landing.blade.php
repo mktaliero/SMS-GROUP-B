@@ -12,6 +12,10 @@
 <div class="row" style="height: 400px;">
 <div class="col-md-3 alert alert-info">
   <p>Side Menu</p>
+  <p><b>Home</b></p>
+  <p><b>Admission</b></p>
+  <p><b>Confirmation</b></p>
+  <p><b>Logout</b></p>
 </div>
 
 <!-- <div class="col-md-1">
@@ -19,7 +23,9 @@
 </div> -->
 
 <div class="col-md-8 alert alert-primary">
-  <p>Content Area</p>
+  <!-- <p>Content Area</p> -->
+  <br>
+  <h2>Welcome to Usmanu Danfodiyo University Students Registration Portal</h2>
 </div>
 
 </div>
